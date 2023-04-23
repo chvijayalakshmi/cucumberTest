@@ -1,17 +1,13 @@
 package com.example.Cucumber_Test;
-
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.awt.*;
 import java.util.List;
 import static java.lang.Thread.sleep;
 
@@ -32,7 +28,7 @@ public class StepDefinition {
     public void user_visits_svt_play() throws InterruptedException {
        driver.manage().window().maximize();
        sleep(2000);
-        driver.findElement(By.cssSelector("#__next > div.sc-4f221cd2-1.fHHyBJ > div > div.sc-4f221cd2-8.bRFLbH > button.sc-5b00349a-2.fuGbXH.sc-4f221cd2-9.hEiUxP")).click();
+        driver.findElement(By.cssSelector("#__next > div:nth-child(3) > div:nth-child(2) > div > div > div.sc-2ab3fa9b-8.eTLtMf > button.sc-5b00349a-2.fuGbXH.sc-2ab3fa9b-9.iXSCyd")).click();
         sleep(2000);
 
 
